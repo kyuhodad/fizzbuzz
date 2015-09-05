@@ -24,8 +24,8 @@
       }
 
       // Display a number
-      //var strTiDisplay = getFizzBuzz ();
-      htmlStr += "<td>" + getFizzBuzz (n) + "</td>"
+      var fizzBuzz = getFizzBuzz (n);
+      htmlStr += "<td class=" + fizzBuzz.className + ">" + fizzBuzz.display + "</td>"
 
       // Close a record
       if ( n % 10 === 0) {
@@ -47,14 +47,14 @@
     var bIsFizz = ((number % 3) === 0);
     var bIsBuzz = ((number % 5) === 0);
     if (bIsFizz && bIsBuzz) {
-      return "FizzBuzz";
+      return { display: "FizzBuzz", className: "fizzbuzz-number" };
     } else if (bIsFizz) {
-      return "Fizz";
+      return { display: "Fizz", className: "fizz-number"};
     } else if (bIsBuzz){
-      return "Buzz";
+      return { display: "Buzz", className: "buzz-number"};
     } else {
       // number.toString();
-      return number;
+      return { display: number, className: "regular-number"};
     }
   }
 })();

@@ -2,3 +2,15 @@
   width : 10%;
   text-align: right;
 }
+
+.fizz-number {
+  background-color: orangered;
+}
+
+.buzz-number {
+  background-color: lightskyblue;
+}
+
+.fizzbuzz-number {
+  background-color: violet;
+}
