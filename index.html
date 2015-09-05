@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Week1 HomeWorks: FizzBuzz">
+    <meta name="author" content="Kyeong Hwi Lee">
 
-    <title>Blank</title>
+    <title>FizzBuzz by Kyeong Hwi Lee</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +25,72 @@
 
 <div class="container">
 
-    <h1>Hello World!</h1>
-    <p class="lead">This is something!</p>
+    <div class="jumbotron">
+      <h1>Let's count in FizzBuzz way!</h1>
+    </div>
+
+    <div class="row input-group">
+      <span class="input-group-addon">Type a number : </span>
+      <input id="input-number" class="form-control" type="number" min="1" max="1000" value="50">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">
+          <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-success" type="button">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </button>
+      </span>
+    </div>
+
+    <br/>
+
+    <div class="row panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Follow me!</h3>
+      </div>
+      <div class="panel-body">
+        1, 2, Fizz, 4, Buzz
+      </div>
+      <table border="1" style="width:100%">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>Fizz</td>
+          <td>4</td>
+          <td>Buzz</td>
+          <td>Fizz</td>
+          <td>7</td>
+          <td>8</td>
+          <td>Fizz</td>
+          <td>Buzz</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>Fizz</td>
+          <td>4</td>
+          <td>Buzz</td>
+          <td>Fizz</td>
+          <td>7</td>
+          <td>8</td>
+          <td>Fizz</td>
+          <td>Buzz</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>Fizz</td>
+          <td>4</td>
+          <td>Buzz</td>
+          <td>Fizz</td>
+          <td>7</td>
+          <td>8</td>
+          <td>Fizz</td>
+          <td>Buzz</td>
+        </tr>
+      </table>
+
+    </div>
 
 </div><!-- /.container -->
 
@@ -36,5 +100,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="fizzbuzz.js"></script>
 </body>
 </html>
