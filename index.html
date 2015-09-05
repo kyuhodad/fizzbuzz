@@ -19,6 +19,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="fizzbuzz.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,10 +36,10 @@
       <span class="input-group-addon">Type a number : </span>
       <input id="input-number" class="form-control" type="number" min="1" max="1000" value="50">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">
+        <button id="random-btn" class="btn btn-default" type="button">
           <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
         </button>
-        <button class="btn btn-success" type="button">
+        <button id="fizzbuzz-btn" class="btn btn-success" type="button">
           <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
         </button>
       </span>
@@ -49,47 +52,9 @@
         <h3 class="panel-title">Follow me!</h3>
       </div>
       <div class="panel-body">
-        1, 2, Fizz, 4, Buzz
+        <table id="output-table" border="1" style="width:100%">
+        </table>
       </div>
-      <table border="1" style="width:100%">
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>Fizz</td>
-          <td>4</td>
-          <td>Buzz</td>
-          <td>Fizz</td>
-          <td>7</td>
-          <td>8</td>
-          <td>Fizz</td>
-          <td>Buzz</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>Fizz</td>
-          <td>4</td>
-          <td>Buzz</td>
-          <td>Fizz</td>
-          <td>7</td>
-          <td>8</td>
-          <td>Fizz</td>
-          <td>Buzz</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>Fizz</td>
-          <td>4</td>
-          <td>Buzz</td>
-          <td>Fizz</td>
-          <td>7</td>
-          <td>8</td>
-          <td>Fizz</td>
-          <td>Buzz</td>
-        </tr>
-      </table>
-
     </div>
 
 </div><!-- /.container -->
